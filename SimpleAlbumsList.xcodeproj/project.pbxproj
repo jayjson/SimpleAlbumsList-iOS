@@ -17,6 +17,8 @@
 		9345A4B72A2A002B00BA5DB2 /* GetAlbumsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9345A4B52A2A002B00BA5DB2 /* GetAlbumsError.swift */; };
 		9345A4B82A2A002B00BA5DB2 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9345A4B62A2A002B00BA5DB2 /* Album.swift */; };
 		9345A4BB2A2A004D00BA5DB2 /* AlbumsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9345A4BA2A2A004D00BA5DB2 /* AlbumsListViewModel.swift */; };
+		9345A4BF2A2A008700BA5DB2 /* AlbumsListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9345A4BD2A2A008700BA5DB2 /* AlbumsListRepository.swift */; };
+		9345A4C02A2A008700BA5DB2 /* AlbumsListRepositoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9345A4BE2A2A008700BA5DB2 /* AlbumsListRepositoryImp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		9345A4B52A2A002B00BA5DB2 /* GetAlbumsError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAlbumsError.swift; sourceTree = "<group>"; };
 		9345A4B62A2A002B00BA5DB2 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		9345A4BA2A2A004D00BA5DB2 /* AlbumsListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsListViewModel.swift; sourceTree = "<group>"; };
+		9345A4BD2A2A008700BA5DB2 /* AlbumsListRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsListRepository.swift; sourceTree = "<group>"; };
+		9345A4BE2A2A008700BA5DB2 /* AlbumsListRepositoryImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsListRepositoryImp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				9345A4B42A2A002B00BA5DB2 /* Model */,
+				9345A4BC2A2A008700BA5DB2 /* Repository */,
 				9345A4A92A29FF8100BA5DB2 /* View */,
 				9345A4B92A2A004D00BA5DB2 /* ViewModel */,
 			);
@@ -125,6 +130,15 @@
 				9345A4BA2A2A004D00BA5DB2 /* AlbumsListViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9345A4BC2A2A008700BA5DB2 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				9345A4BD2A2A008700BA5DB2 /* AlbumsListRepository.swift */,
+				9345A4BE2A2A008700BA5DB2 /* AlbumsListRepositoryImp.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,11 +217,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9345A4C02A2A008700BA5DB2 /* AlbumsListRepositoryImp.swift in Sources */,
 				9345A4AD2A29FF8200BA5DB2 /* AlbumsListViewController.swift in Sources */,
 				9345A4902A29F87000BA5DB2 /* AppDelegate.swift in Sources */,
 				9345A4BB2A2A004D00BA5DB2 /* AlbumsListViewModel.swift in Sources */,
 				9345A4B72A2A002B00BA5DB2 /* GetAlbumsError.swift in Sources */,
 				9345A4922A29F87000BA5DB2 /* SceneDelegate.swift in Sources */,
+				9345A4BF2A2A008700BA5DB2 /* AlbumsListRepository.swift in Sources */,
 				9345A4AC2A29FF8200BA5DB2 /* AlbumCell.swift in Sources */,
 				9345A4B82A2A002B00BA5DB2 /* Album.swift in Sources */,
 			);
@@ -349,7 +365,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SimpleAlbumsList/Info.plist;
+				INFOPLIST_FILE = SimpleAlbumsList/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -379,7 +395,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SimpleAlbumsList/Info.plist;
+				INFOPLIST_FILE = SimpleAlbumsList/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
