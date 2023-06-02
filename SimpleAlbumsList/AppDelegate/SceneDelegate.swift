@@ -11,10 +11,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.makeKeyAndVisible()
     }
     
-    private func prepareInitialScreen() -> UIViewController {
-        let viewController = UIViewController()
-        viewController.view.backgroundColor = .red
-        return viewController
+    private func prepareInitialScreen() -> AlbumsListViewController {
+        let repository = AlbumsListRepositoryImp()
+        let viewModel = AlbumsListViewModel(repository: repository)
+        return AlbumsListViewController(viewModel: viewModel)
     }
 }
-
