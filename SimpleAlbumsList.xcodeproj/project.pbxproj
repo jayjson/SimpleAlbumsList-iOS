@@ -142,8 +142,8 @@
 		9345A4B42A2A002B00BA5DB2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9345A4B52A2A002B00BA5DB2 /* GetAlbumsError.swift */,
 				9345A4B62A2A002B00BA5DB2 /* Album.swift */,
+				9345A4B52A2A002B00BA5DB2 /* GetAlbumsError.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";

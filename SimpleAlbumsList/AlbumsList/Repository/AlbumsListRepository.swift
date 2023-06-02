@@ -1,3 +1,3 @@
 protocol AlbumsListRepository {
-  func getAlbums() async throws -> [Album]
+    func getAlbums() async throws -> [Album]
 }
