@@ -135,8 +135,7 @@
 				9345A4AA2A29FF8100BA5DB2 /* AlbumCell.swift */,
 				9345A4AB2A29FF8200BA5DB2 /* AlbumsListViewController.swift */,
 			);
-			name = View;
-			path = "../../../../Previous interviews/2022/Wayfair/WayfairTakehome/WayfairTakehome/View";
+			path = View;
 			sourceTree = "<group>";
 		};
 		9345A4B42A2A002B00BA5DB2 /* Model */ = {

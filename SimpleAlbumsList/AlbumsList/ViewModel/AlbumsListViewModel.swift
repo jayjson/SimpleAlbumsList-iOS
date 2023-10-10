@@ -11,15 +11,17 @@ class AlbumsListViewModel: ObservableObject {
         self.repository = repository
     }
     
-    func loadAlbums() async {
-        do {
-            let fetchedAlbums = try await repository.getAlbums()
-            albums = fetchedAlbums
-        } catch is GetAlbumsError {
-            self.error = error
-        } catch {
-            let errorMessage = "Unexpected error occured: \(error)"
-            assertionFailure(errorMessage)
+    func loadAlbums() {
+        Task {
+            do {
+                let fetchedAlbums = try await repository.getAlbums()
+                albums = fetchedAlbums
+            } catch is GetAlbumsError {
+                self.error = error
+            } catch {
+                let errorMessage = "Unexpected error occured: \(error)"
+                assertionFailure(errorMessage)
+            }
         }
     }
 }

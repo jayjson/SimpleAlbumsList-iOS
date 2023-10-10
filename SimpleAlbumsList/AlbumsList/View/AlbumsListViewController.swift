@@ -26,7 +26,7 @@ class AlbumsListViewController: UIViewController {
   }
   
   private func setupSubscribers() {
-    viewModel.$products
+    viewModel.$albums
       .receive(on: RunLoop.main)
       .sink { [weak self] products in
         self?.collectionView.reloadData()
@@ -44,7 +44,7 @@ class AlbumsListViewController: UIViewController {
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
-    viewModel.loadProducts()
+    viewModel.loadAlbums()
   }
 
   private func showErrorAlert(error: GetAlbumsError) {
@@ -74,13 +74,13 @@ extension AlbumsListViewController: UICollectionViewDataSource {
   }
   
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    viewModel.products.count
+    viewModel.albums.count
   }
   
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AlbumCell.reuseId, for: indexPath) as! AlbumCell
-    let product = viewModel.products[indexPath.item]
-    cell.configureCell(with: product)
+    let album = viewModel.albums[indexPath.item]
+    cell.configureCell(with: album)
     return cell
   }
 }
