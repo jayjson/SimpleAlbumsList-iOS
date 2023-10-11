@@ -1,6 +1,6 @@
 import Foundation
 
-enum GetAlbumsError: Error {
+enum GetAlbumsError: Error, Equatable {
     case invalidUrl
     case couldNotPerform
     case noInternetConnection

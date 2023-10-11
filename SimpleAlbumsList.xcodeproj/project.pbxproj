@@ -19,7 +19,7 @@
 		9345A4BB2A2A004D00BA5DB2 /* AlbumsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9345A4BA2A2A004D00BA5DB2 /* AlbumsListViewModel.swift */; };
 		9345A4BF2A2A008700BA5DB2 /* AlbumsListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9345A4BD2A2A008700BA5DB2 /* AlbumsListRepository.swift */; };
 		9345A4C02A2A008700BA5DB2 /* AlbumsListRepositoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9345A4BE2A2A008700BA5DB2 /* AlbumsListRepositoryImp.swift */; };
-		9345A4C82A2A01C200BA5DB2 /* SimpleAlbumsListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9345A4C72A2A01C200BA5DB2 /* SimpleAlbumsListTests.swift */; };
+		9345A4C82A2A01C200BA5DB2 /* AlbumsListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9345A4C72A2A01C200BA5DB2 /* AlbumsListViewModelTests.swift */; };
 		9345A4CF2A2A029000BA5DB2 /* MockAlbumsListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9345A4CE2A2A029000BA5DB2 /* MockAlbumsListRepository.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +48,7 @@
 		9345A4BD2A2A008700BA5DB2 /* AlbumsListRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsListRepository.swift; sourceTree = "<group>"; };
 		9345A4BE2A2A008700BA5DB2 /* AlbumsListRepositoryImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsListRepositoryImp.swift; sourceTree = "<group>"; };
 		9345A4C52A2A01C200BA5DB2 /* SimpleAlbumsListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleAlbumsListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9345A4C72A2A01C200BA5DB2 /* SimpleAlbumsListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAlbumsListTests.swift; sourceTree = "<group>"; };
+		9345A4C72A2A01C200BA5DB2 /* AlbumsListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsListViewModelTests.swift; sourceTree = "<group>"; };
 		9345A4CE2A2A029000BA5DB2 /* MockAlbumsListRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockAlbumsListRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,10 +167,18 @@
 		9345A4C62A2A01C200BA5DB2 /* SimpleAlbumsListTests */ = {
 			isa = PBXGroup;
 			children = (
-				9345A4C72A2A01C200BA5DB2 /* SimpleAlbumsListTests.swift */,
-				9345A4CE2A2A029000BA5DB2 /* MockAlbumsListRepository.swift */,
+				9345A4C72A2A01C200BA5DB2 /* AlbumsListViewModelTests.swift */,
+				93CA3B5F2AD6E6970086DC1F /* Mock */,
 			);
 			path = SimpleAlbumsListTests;
+			sourceTree = "<group>";
+		};
+		93CA3B5F2AD6E6970086DC1F /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				9345A4CE2A2A029000BA5DB2 /* MockAlbumsListRepository.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,7 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9345A4C82A2A01C200BA5DB2 /* SimpleAlbumsListTests.swift in Sources */,
+				9345A4C82A2A01C200BA5DB2 /* AlbumsListViewModelTests.swift in Sources */,
 				9345A4CF2A2A029000BA5DB2 /* MockAlbumsListRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

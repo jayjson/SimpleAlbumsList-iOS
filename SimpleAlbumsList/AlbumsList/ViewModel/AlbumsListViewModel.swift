@@ -16,7 +16,7 @@ class AlbumsListViewModel: ObservableObject {
             do {
                 let fetchedAlbums = try await repository.getAlbums()
                 albums = fetchedAlbums
-            } catch is GetAlbumsError {
+            } catch let error as GetAlbumsError {
                 self.error = error
             } catch {
                 let errorMessage = "Unexpected error occured: \(error)"
