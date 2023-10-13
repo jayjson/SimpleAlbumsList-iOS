@@ -1,16 +1,22 @@
 import Foundation
 
 class AlbumsListRepositoryImp: AlbumsListRepository {
-    private static let urlString = "https://jsonplaceholder.typicode.com/albums"
+    private let urlSession: URLSessionProtocol
+    private let urlString: String
+    
+    init(session: URLSessionProtocol = URLSession.shared, urlString: String = "https://jsonplaceholder.typicode.com/albums") {
+        self.urlSession = session
+        self.urlString = urlString
+    }
     
     func getAlbums() async throws -> [Album] {
-        guard let url = URL(string: AlbumsListRepositoryImp.urlString) else {
+        guard let url = URL(string: urlString) else {
             throw GetAlbumsError.invalidUrl
         }
         let data: Data
         let urlResponse: URLResponse
         do {
-            let result = try await URLSession.shared.data(from: url)
+            let result = try await urlSession.data(from: url)
             data = result.0
             urlResponse = result.1
         } catch {

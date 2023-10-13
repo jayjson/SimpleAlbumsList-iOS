@@ -21,6 +21,9 @@
 		9345A4C02A2A008700BA5DB2 /* AlbumsListRepositoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9345A4BE2A2A008700BA5DB2 /* AlbumsListRepositoryImp.swift */; };
 		9345A4C82A2A01C200BA5DB2 /* AlbumsListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9345A4C72A2A01C200BA5DB2 /* AlbumsListViewModelTests.swift */; };
 		9345A4CF2A2A029000BA5DB2 /* MockAlbumsListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9345A4CE2A2A029000BA5DB2 /* MockAlbumsListRepository.swift */; };
+		93847E382AD9853A004E176F /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93847E372AD9853A004E176F /* URLSessionProtocol.swift */; };
+		93847E3A2AD985A8004E176F /* AlbumsListRepositoryImpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93847E392AD985A8004E176F /* AlbumsListRepositoryImpTests.swift */; };
+		93847E3C2AD99120004E176F /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93847E3B2AD99120004E176F /* MockURLSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		9345A4C52A2A01C200BA5DB2 /* SimpleAlbumsListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleAlbumsListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9345A4C72A2A01C200BA5DB2 /* AlbumsListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsListViewModelTests.swift; sourceTree = "<group>"; };
 		9345A4CE2A2A029000BA5DB2 /* MockAlbumsListRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockAlbumsListRepository.swift; sourceTree = "<group>"; };
+		93847E372AD9853A004E176F /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		93847E392AD985A8004E176F /* AlbumsListRepositoryImpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsListRepositoryImpTests.swift; sourceTree = "<group>"; };
+		93847E3B2AD99120004E176F /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,7 @@
 			children = (
 				9345A4A52A29FF4A00BA5DB2 /* AlbumsList */,
 				9345A4A32A29FE9300BA5DB2 /* AppDelegate */,
+				93847E362AD9850E004E176F /* Dependency */,
 				9345A4A42A29FEA300BA5DB2 /* Resources */,
 			);
 			path = SimpleAlbumsList;
@@ -122,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				9345A4B42A2A002B00BA5DB2 /* Model */,
-				9345A4BC2A2A008700BA5DB2 /* Repository */,
 				9345A4A92A29FF8100BA5DB2 /* View */,
 				9345A4B92A2A004D00BA5DB2 /* ViewModel */,
 			);
@@ -168,15 +174,26 @@
 			isa = PBXGroup;
 			children = (
 				9345A4C72A2A01C200BA5DB2 /* AlbumsListViewModelTests.swift */,
+				93847E392AD985A8004E176F /* AlbumsListRepositoryImpTests.swift */,
 				93CA3B5F2AD6E6970086DC1F /* Mock */,
 			);
 			path = SimpleAlbumsListTests;
+			sourceTree = "<group>";
+		};
+		93847E362AD9850E004E176F /* Dependency */ = {
+			isa = PBXGroup;
+			children = (
+				9345A4BC2A2A008700BA5DB2 /* Repository */,
+				93847E372AD9853A004E176F /* URLSessionProtocol.swift */,
+			);
+			path = Dependency;
 			sourceTree = "<group>";
 		};
 		93CA3B5F2AD6E6970086DC1F /* Mock */ = {
 			isa = PBXGroup;
 			children = (
 				9345A4CE2A2A029000BA5DB2 /* MockAlbumsListRepository.swift */,
+				93847E3B2AD99120004E176F /* MockURLSession.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -287,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93847E382AD9853A004E176F /* URLSessionProtocol.swift in Sources */,
 				9345A4C02A2A008700BA5DB2 /* AlbumsListRepositoryImp.swift in Sources */,
 				9345A4AD2A29FF8200BA5DB2 /* AlbumsListViewController.swift in Sources */,
 				9345A4902A29F87000BA5DB2 /* AppDelegate.swift in Sources */,
@@ -303,6 +321,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93847E3C2AD99120004E176F /* MockURLSession.swift in Sources */,
+				93847E3A2AD985A8004E176F /* AlbumsListRepositoryImpTests.swift in Sources */,
 				9345A4C82A2A01C200BA5DB2 /* AlbumsListViewModelTests.swift in Sources */,
 				9345A4CF2A2A029000BA5DB2 /* MockAlbumsListRepository.swift in Sources */,
 			);
