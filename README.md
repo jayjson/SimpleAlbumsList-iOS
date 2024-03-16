@@ -1,4 +1,4 @@
-# SimpleAlbumsList
+# SimpleAlbumsList (UIKit)
 
 ## Overview
 This iOS application demonstrates advanced software engineering practices in the retrieval and display of a list of albums from a mock API ([JSON Placeholder](https://jsonplaceholder.typicode.com/)). The application follows the MVVM design pattern, integrated with a repository layer, to ensure a scalable, robust, and clean architecture. A focus on separation of concerns allows for effective management of dependencies and data flow.
